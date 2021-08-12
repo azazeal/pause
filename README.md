@@ -1,6 +1,6 @@
 [![Build Status](https://github.com/azazeal/pause/actions/workflows/build.yml/badge.svg)](https://github.com/azazeal/pause/actions/workflows/build.yml)
-[![Coverage Report](https://coveralls.io/repos/github/pause/fly/badge.svg?branch=master)](https://coveralls.io/github/azazeal/pause?branch=master)
-[![Go Reference](https://pkg.go.dev/badge/github.com/pause/fly.svg)](https://pkg.go.dev/github.com/azazeal/pause)
+[![Coverage Report](https://coveralls.io/repos/github/azazeal/pause/badge.svg?branch=master)](https://coveralls.io/github/azazeal/pause?branch=master)
+[![Go Reference](https://pkg.go.dev/badge/github.com/pause.svg)](https://pkg.go.dev/github.com/azazeal/pause)
 
 # pause
 
