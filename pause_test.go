@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 const forever = time.Duration(math.MaxInt64)
@@ -40,11 +40,11 @@ func TestContextCancelation(t *testing.T) {
 	ensure(ctx, t, forever, time.Second<<1)
 }
 
-func ensure(ctx context.Context, t *testing.T, timeout, delta time.Duration) bool {
+func ensure(ctx context.Context, t *testing.T, timeout, delta time.Duration) {
 	t.Helper()
 
 	at := time.Now()
 	For(ctx, timeout)
 
-	return assert.WithinDuration(t, at, time.Now(), delta)
+	require.WithinDuration(t, at, time.Now(), delta)
 }
